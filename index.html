@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>貓頭鷹</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="images/owlicon.png" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">貓頭鷹</a></li>
+                        <li><a href="#creative" class="nav-link">鴟鴞、草鴞</a></li>
+                        <li><a href="#activity" class="nav-link">慘忍的一面</a></li>
+                        <li><a href="#standard" class="nav-link">禁止飼養</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/owl3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>鴟鴞</h1>
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/owl1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>草鴞</h1>
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/owl2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h1>雪鴞</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                貓頭鷹
+            </h2>
+            <!-- 產品照片 -->
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="鴟鴞" src="images/owl7.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">鴟鴞</span>
+                                <span class="card-text">普遍的樣子</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>我是貓頭鷹</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="草鴞" src="images/owl5.jpg">
+                            <div class="card-title-wrap">
+                                <span class="card-title">草鴞</span>
+                                <span class="card-text">可怕卻美麗</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>我是貓頭鷹</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3>貓頭鷹</h3>
+                    <p>擁有著的樣貌</br>
+                        美麗的、帥氣的、可愛的
+                    </p>
+                    <p>近人的外表下</br>
+                        依然是可怕的掠食者</br>
+                        不可輕視的
+                    </p>
+                    <h1>OWL</h1>
+                    <p>貓頭鷹生活，生活貓頭鷹
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/egg.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/owleating.jpg">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h2>終究是<span>鷹</span></h2>
+                    <h1></h1>
+                    <h2>全肉食性動物</h2>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/owleating2.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <table class="table">
+                        <tr>
+                            <h5 scope="col">台灣貓頭鷹飼養：</h5>
+                        </tr>
+                        <ul class="standard_use">
+                            <li>台灣目前有12種「貓頭鷹」，都是二級包育類珍貴稀有野生動物。</li>
+                            <li>若非法飼養，將依野生動物保育法處6個月以上5年以下有期徒刑，得併科20萬元以上100萬元以下罰金。</li>
+                            <li>貓頭鷹飼養困難，純肉食動物的貓頭鷹要餵食只能給予小動物生肉，排泄除了和一般鳥類一樣會隨地排出外，還會經常會吐出食物裡無法消化的骨頭。</li>
+                            <li>大部分貓頭鷹體型較大，台灣較難有適宜的場所飼養。而且飼養人相關知識或訓練不足可是非常難與人互動，甚至擁有危險的攻擊性。</li>
+                        </ul>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貼心提醒 -->
+    <section>
+        <div class="container content">
+            <div class="row remind">
+                <h4>貼心提醒</h4>
+                <div class="w-100"></div>
+                <p>觀看時請留意：</p>
+                <ul>
+                    <li>實在是太棒了請控制住自己</li>
+                    <li>可以搜尋更多貓頭鷹圖片</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/owlicon.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>服務時間：週一至週五 9:00 ~ 18:00</li>
+                        <li>服務信箱：kirin159361@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>COPYRIGHT © 2019 Kirin .ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
